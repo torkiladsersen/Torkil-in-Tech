@@ -4,8 +4,32 @@
 
 <nav class="mx-auto h-24 max-w-screen-lg p-4">
   <a class="text-xl" href="/"
-    ><span class="font-bold">torkil</span> in tech<span class="font-black"
-      >_</span
+    ><span class="font-bold">torkil</span> in tech<span
+      class="underscore-anim font-black">_</span
     ></a
   >
 </nav>
+
+<style>
+  @keyframes blink {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  .underscore-anim {
+    animation-name: blink;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  }
+  @media (prefers-reduced-motion) {
+    .underscore-anim {
+      animation: none;
+    }
+  }
+</style>
