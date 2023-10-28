@@ -22,7 +22,17 @@ const { title, description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <script is:inline>
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      function isDarkScheme() {
+        const sessionData = window.sessionStorage.getItem("darkScheme");
+
+        if (sessionData) {
+          return "true" === sessionData;
+        }
+
+        return window.matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+
+      if (isDarkScheme()) {
         document.documentElement.classList.add("dark");
       }
     </script>

@@ -1,13 +1,18 @@
 ---
-
+import ThemeToggle from "./ThemeToggle.svelte";
+import { Icon } from "astro-icon";
 ---
 
-<nav class="mx-auto h-24 max-w-screen-lg p-4">
+<nav class="mx-auto flex max-w-screen-lg items-center justify-between p-4">
   <a class="text-xl" href="/"
     ><span class="font-bold">torkil</span> in tech<span
       class="underscore-anim font-black">_</span
     ></a
   >
+  <ThemeToggle client:only="svelte">
+    <Icon slot="light" name="clarity:sun-solid" />
+    <Icon slot="dark" name="clarity:moon-solid" />
+  </ThemeToggle>
 </nav>
 
 <style>
