@@ -31,6 +31,30 @@ export default {
 					'&:hover': {
 						color: '#c2410c' /* ORANGE-700 */
 					},
+				},
+				'.bg-link-light': {
+					backgroundColor: '#fbbf24', /* AMBER-400 */
+					'&:hover': {
+						backgroundColor: '#fcd34d' /* AMBER-300 */
+					},
+				},
+				'.bg-link-dark': {
+					backgroundColor: '#9a3412', /* ORANGE-800 */
+					'&:hover': {
+						backgroundColor: '#c2410c' /* ORANGE-700 */
+					},
+				},
+				'.border-link-light': {
+					borderColor: '#fbbf24', /* AMBER-400 */
+					'&:hover': {
+						borderColor: '#fcd34d' /* AMBER-300 */
+					},
+				},
+				'.border-link-dark': {
+					borderColor: '#9a3412', /* ORANGE-800 */
+					'&:hover': {
+						borderColor: '#c2410c' /* ORANGE-700 */
+					},
 				}
 			})
 		})
