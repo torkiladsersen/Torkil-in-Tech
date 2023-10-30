@@ -15,18 +15,18 @@
 
 <button
   on:click={() => (darkScheme = !darkScheme)}
-  class="relative h-[23px] w-[42px] rounded-full border-2 border-zinc-400 dark:border-zinc-400"
+  class="relative h-[22px] w-[42px] rounded-full bg-zinc-200 dark:bg-zinc-600"
 >
   <div
-    class="absolute -left-[2px] -top-[2px] h-[23px] w-[23px] rounded-full border-2 border-zinc-900 bg-sky-500 transition-all dark:translate-x-[19px] dark:border-white dark:bg-sky-900"
+    class="absolute -left-[0px] -top-[0px] h-[22px] w-[22px] rounded-full bg-sky-500 transition-all dark:translate-x-[20px] dark:bg-sky-900"
   ></div>
   <div
-    class="absolute left-[2px] top-[2px] w-[15px] text-yellow-300 dark:text-zinc-400"
+    class="absolute left-[4px] top-[4px] w-[14px] text-yellow-300 dark:text-zinc-400"
   >
     <slot name="light" />
   </div>
   <div
-    class="absolute right-[3px] top-[3px] w-[13px] text-zinc-400 dark:text-sky-100"
+    class="absolute right-[4px] top-[4px] w-[13px] text-zinc-400 dark:text-sky-100"
   >
     <slot name="dark" />
   </div>
