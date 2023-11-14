@@ -1,4 +1,5 @@
 ---
+import Highlight from "../components/Highlight.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -13,45 +14,55 @@ import Layout from "../layouts/Layout.astro";
     </h1>
 
     <div class="max-w-xl">
-      <p class="pb-6">Want the TL;DR? Just read the highlights.</p>
+      <p class="pb-6">
+        Want the <Highlight>TL;DR?</Highlight> Just read the highlighted.
+      </p>
 
-      <p class="pb-6">Hello. I'm Torkil. I'm a web-developer.</p>
+      <p class="pb-6">
+        Hello. I'm Torkil. I'm a <Highlight>web-developer.</Highlight>
+      </p>
 
       <p class="pb-6">
         I'll level with you, because both you and I have better things to do
-        than **** around. I don't know everything. I don't even know everything
-        about front-end development. Yeah, right. Bummer. I think so too.
+        than **** around. I <Highlight>don't know everything.</Highlight> I
+        don't even know everything about front-end development. Yeah, right.
+        Bummer. I think so too.
       </p>
 
       <p class="pb-6">
-        But! I do have one thing going for me. I'm good at solving problems.
-        Especially on the front-end. So, if you're sitting with a web project,
-        be it an e-commerce site or a SaaS dashboard, and you need someone to
-        take you from api end-point or a cms bursting with data to that visual
-        storytelling user interface swirling in brand coherence, I might just be
-        the person you're looking for.
+        But! I do have one thing going for me. I'm <Highlight>
+          good at solving problems.
+        </Highlight> Especially on the front-end. So, if you're sitting with a
+        web project, be it an e-commerce site or a SaaS dashboard, and you need
+        someone to take you from api end-point or a cms bursting with data to
+        that visual storytelling user interface swirling in brand coherence, I
+        might just be the person you're looking for.
       </p>
 
       <p class="pb-6">
-        Yes, I'm profecient in html, css, javascript, but I've never really
-        thought about my skillset in that way. I like to go where the project is
-        pointing. Data from REST or GraphQL? Whatever back-end you've got.
-        Typescript, Tailwind? Great, if they help the project forward. React,
-        Svelte, Angular? Whatever is the better fit. Webflow? Yes, fuck it,
-        let's skip the code if it makes sense in your particular case. <br
-        />Recognize a recuring theme here? If I don't know a particular bit of
-        stack needed, I'm fast at picking up - reading documentation, scouring
-        forums, chatboards and communities to move me forward. Like I said.
-        Solutions oriented.<br />(Oh, and all the buzzwords above is bits of
-        stack I've worked with)
+        Yes, I'm <Highlight>profecient in html, css and javascript,</Highlight>
+         though I've never really thought about my skillset in that way. I like
+        to go where the project is pointing. Data from REST or GraphQL? Whatever
+        back-end you've got. Typescript, Tailwind? Great, if they help the
+        project forward. React, Svelte, Angular? Whatever is the better fit.
+        Webflow? Yes, fuck it, let's skip the code if it makes sense in your
+        particular case. <br />Recognize a recuring theme here? If I don't know
+        a particular bit of stack needed, I'm <Highlight>
+          fast at picking up new stuff
+        </Highlight> - reading documentation, scouring forums, chatboards and
+        communities to move me forward. Like I said. Solutions oriented - <Highlight
+        >
+          getting things done.
+        </Highlight>
       </p>
 
       <p class="pb-6">
         So, what else is there to say. I have twin boys about to turn 6, a
         lovely wife and a couch-hugger of a dog. I write dystopian fiction in my
         spare time, avidly play boardgames with my friends when I get the
-        chance, and live in the dead and dull outskirts of Copenhagen. I guess
-        all of that is just how I like it.
+        chance, and live in the dead and dull <Highlight>
+          suburbs of Copenhagen.
+        </Highlight> Which is just how I prefer it.
       </p>
 
       <p class="pb-6">
@@ -61,7 +72,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
   <aside class="mx-auto max-w-screen-lg px-4 pb-6">
-    <p class="max-w-lg text-sm">
+    <p class="max-w-lg text-xl">
       Oh, and if you came looking for cookies, my wife's are too damn good to
       hand out, so I'm afraid you'll find none here. Sorry 'bout that.
     </p>
