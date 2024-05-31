@@ -38,12 +38,15 @@ const { title, description } = Astro.props;
     </script>
   </head>
   <body
-    class="bg-stone-50 font-sans text-lg text-zinc-900 dark:bg-zinc-800 dark:text-white"
+    class="relative bg-white font-sans text-lg text-zinc-900 dark:bg-black dark:text-white"
   >
+  <div class="z-0 bg-gradient-to-r from-lime-100 to-amber-100 dark:from-indigo-900 dark:to-violet-900 absolute top-0 bottom-0 left-0 right-0 dark:opacity-50"></div>
+  <div class="relative z-10">
     <Navbar />
     <main>
       <slot />
     </main>
     <Footer />
+  </div>
   </body>
 </html>

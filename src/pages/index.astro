@@ -1,38 +1,41 @@
 ---
-import Highlight from "../components/Highlight.astro";
 import Layout from "../layouts/Layout.astro";
+import Highlight from "../components/Highlight.astro";
+import HeroWord from "../components/HeroWord.astro";
 import Buzzwords from "../components/Buzzwords.astro";
+import Education from "../components/Education.astro"
+
 ---
 
 <Layout
   title="Torkil in Tech"
   description="A front-end developer in love with thinking"
 >
-  <section class="mx-auto max-w-screen-lg px-4 pb-6 text-xl">
+  <article class="mx-auto max-w-screen-lg px-4 pb-6 text-xl">
     <h1 class="my-32 text-9xl font-thin uppercase">
-      A <strong class="font-black">solution oriented</strong> front-end
+      A <HeroWord>solution oriented</HeroWord> front-end
       developer
-    </h1>
+</h1>
 
-    <div class="max-w-xl">
-      <p class="pb-6">
+    <div class="grid grid-cols-3 gap-12">
+      <p class="col-span-2">
         Want the <Highlight>TL;DR?</Highlight> Just read the highlighted.
       </p>
 
-      <p class="pb-6">
+      <p class="col-span-2">
         Hello. I'm Torkil. I'm a <Highlight>web-developer.</Highlight>
       </p>
 
-      <p class="pb-6">
+      <p class="col-span-2">
         I'll level with you, because both you and I have better things to do
         than **** around. I <Highlight>don't know everything.</Highlight> I
         don't even know everything about front-end development. Yeah, right.
         Bummer. I think so too.
       </p>
 
-      <p class="pb-6">
+      <p class="col-span-2">
         But! I do have one thing going for me. I'm <Highlight>
-          good at solving problems.
+          really good at solving problems.
         </Highlight> Especially on the front-end. So, if you're sitting with a
         web project, be it an e-commerce site or a SaaS dashboard, and you need
         someone to take you from api or cms to that visual storytelling user
@@ -40,41 +43,35 @@ import Buzzwords from "../components/Buzzwords.astro";
         looking for.
       </p>
 
-      <p class="pb-6">
-        Yes, I'm <Highlight>profecient in html, css and javascript,</Highlight>
+      
+      <p class="col-span-2">
+        Yes, I'm <Highlight>proficient in html, css and javascript,</Highlight>
          though I've never really thought about my skillset in that way. I like
         to go where the project is pointing. Whatever is the better fit. You
         could say I'm somewhat <Highlight>framework agnostic.</Highlight> If I
         don't already know a particular bit of stack needed, I'm <Highlight>
           fast at picking up
         </Highlight> - reading documentation, scouring forums, chatboards and
-        communities to move me forward. Like I said. Solutions oriented - <Highlight
-        >
-          getting things done.
-        </Highlight>
+        communities to move me forward. Like I said. Solutions oriented - <Highlight>getting things done.</Highlight>
       </p>
 
       <Buzzwords />
 
-      <p class="pb-6">
-        So, what else is there to say. I have twin boys about to turn 6, a
+      <p class="col-span-2">
+        So, what else is there to say. I have twin boys about to start school, a
         lovely wife and a couch-hugger of a dog. I write dystopian fiction in my
         spare time, avidly play boardgames with my friends when I get the
-        chance, and live in the dead and dull <Highlight>
+        chance, and live in the <Highlight>
           suburbs of Copenhagen.
         </Highlight> Which is just how I prefer it.
       </p>
 
-      <p class="pb-6">
+      <p class="col-span-2">
         Think I fit your team or project? Great! I would love to hear from you.
-        Write me at hello@torkil.tech and let's get talking.
+        <Highlight>Write me at <a class="link-dark dark:link-light" href="mailto:hello@torkil.tech">hello@torkil.tech</a></Highlight> and let's get talking.
       </p>
+      <Education />
     </div>
-  </section>
-  <aside class="mx-auto max-w-screen-lg px-4 pb-6">
-    <p class="max-w-lg text-xl">
-      Oh, and if you came looking for cookies, my wife's are too damn good to
-      hand out, so I'm afraid you'll find none here. Sorry 'bout that.
-    </p>
-  </aside>
+  </article>
+  
 </Layout>
