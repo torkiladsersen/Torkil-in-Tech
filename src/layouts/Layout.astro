@@ -2,7 +2,6 @@
 import "../base.css";
 
 import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
 
 interface Props {
   title: string;
@@ -38,15 +37,15 @@ const { title, description } = Astro.props;
     </script>
   </head>
   <body
-    class="relative bg-white font-sans text-lg text-zinc-900 dark:bg-black dark:text-white"
+    class="relative overflow-x-hidden bg-stone-100 bg-gradient-to-b from-orange-200/50 to-stone-100 font-sans text-black dark:bg-stone-900 dark:from-stone-900 dark:to-orange-950/50 dark:text-white"
   >
-  <div class="z-0 bg-gradient-to-r from-lime-100 to-amber-100 dark:from-indigo-900 dark:to-violet-900 absolute top-0 bottom-0 left-0 right-0 dark:opacity-50"></div>
-  <div class="relative z-10">
-    <Navbar />
-    <main>
-      <slot />
-    </main>
-    <Footer />
-  </div>
+    <div
+      class="mx-auto max-w-screen-sm px-2 md:max-w-screen-md lg:max-w-screen-lg"
+    >
+      <Navbar />
+      <main>
+        <slot />
+      </main>
+    </div>
   </body>
 </html>

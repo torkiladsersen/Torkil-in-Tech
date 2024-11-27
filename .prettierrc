@@ -4,6 +4,7 @@
     "prettier-plugin-svelte",
     "prettier-plugin-tailwindcss"
   ],
+  "pluginsSearchDirs": false,
   "overrides": [
     {
       "files": "*.astro",

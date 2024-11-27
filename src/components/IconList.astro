@@ -1,0 +1,22 @@
+---
+interface Props {
+  icon: string;
+  heading: string;
+}
+
+const { icon, heading } = Astro.props;
+---
+
+<div class="flex flex-row items-start gap-4">
+  <div class:list={["iconify text-3xl lg:text-5xl", icon]}></div>
+  <div>
+    <h2
+      class="pb-1 text-sm font-bold uppercase sm:pb-2 sm:text-base lg:text-lg"
+    >
+      {heading}
+    </h2>
+    <ul class="text-xs uppercase sm:text-sm lg:text-base">
+      <slot />
+    </ul>
+  </div>
+</div>

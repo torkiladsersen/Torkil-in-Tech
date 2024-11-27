@@ -1,77 +1,116 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Highlight from "../components/Highlight.astro";
-import HeroWord from "../components/HeroWord.astro";
-import Buzzwords from "../components/Buzzwords.astro";
-import Education from "../components/Education.astro"
-
+import WidthClamp from "../components/WidthClamp.astro";
+import IconBlock from "../components/IconBlock.astro";
+import Text from "../components/Text.astro";
+import IconList from "../components/IconList.astro";
 ---
 
 <Layout
   title="Torkil in Tech"
-  description="A front-end developer in love with thinking"
+  description="A solution oriented front-end developer."
 >
-  <article class="mx-auto max-w-screen-lg px-4 pb-6 text-xl">
-    <h1 class="my-32 text-9xl font-thin uppercase">
-      A <HeroWord>solution oriented</HeroWord> front-end
-      developer
-</h1>
+  <article class="mx-auto max-w-md pb-24 pt-44 sm:max-w-none sm:pt-56 md:pt-72">
+    <WidthClamp>
+      <h1>
+        <span class="text-6xl font-black sm:text-8xl lg:text-9xl"
+          >I'm Torkil</span
+        ><br /><span
+          class="relative left-1 text-base font-bold sm:text-2xl lg:text-3xl"
+        >
+          - a generalist front-end developer</span
+        >
+      </h1>
+      <div
+        class="iconify absolute right-0 top-0 -translate-y-16 translate-x-0 text-6xl ph--hand-waving sm:-translate-y-16 sm:translate-x-24 sm:text-8xl lg:-translate-y-24 lg:translate-x-36 lg:text-9xl"
+      >
+      </div>
+    </WidthClamp>
 
-    <div class="grid grid-cols-3 gap-12">
-      <p class="col-span-2">
-        Want the <Highlight>TL;DR?</Highlight> Just read the highlighted.
-      </p>
+    <WidthClamp class="py-12 sm:py-20 md:py-28">
+      <Text>As a jack-of-many-trades I focus on the goals of the project.</Text>
+      <Text>
+        I leverage a strong foundation in HTML, CSS and Javascript to succeed no
+        matter the tech stack.
+      </Text>
+    </WidthClamp>
 
-      <p class="col-span-2">
-        Hello. I'm Torkil. I'm a <Highlight>web-developer.</Highlight>
-      </p>
+    <IconBlock>
+      <div slot="icon" class="iconify ph--rocket-launch"></div>
+      <div slot="content">
+        <h2
+          class="pb-2 text-sm font-bold uppercase sm:pb-4 sm:text-base lg:text-lg"
+        >
+          Bits I've worked with:
+        </h2>
+        <p class="max-w-sm text-xs uppercase sm:text-sm lg:text-base">
+          React, Svelte, Angular, Tailwind, CSS-in-JS, Sass, TypeScript, Vanilla
+          JS, ReScript, REST, GraphQL, Astro ...<br />
+        </p>
+      </div>
+    </IconBlock>
 
-      <p class="col-span-2">
-        I'll level with you, because both you and I have better things to do
-        than **** around. I <Highlight>don't know everything.</Highlight> I
-        don't even know everything about front-end development. Yeah, right.
-        Bummer. I think so too.
-      </p>
+    <WidthClamp class="py-12 sm:py-20 md:py-28">
+      <Text>
+        You can see, I don't limit my skillset to a few frameworks or libraries.
+      </Text>
+      <Text>
+        I'm eager to learn what's needed for any given solution, and value
+        co-workers input to better myself.
+      </Text>
+    </WidthClamp>
 
-      <p class="col-span-2">
-        But! I do have one thing going for me. I'm <Highlight>
-          really good at solving problems.
-        </Highlight> Especially on the front-end. So, if you're sitting with a
-        web project, be it an e-commerce site or a SaaS dashboard, and you need
-        someone to take you from api or cms to that visual storytelling user
-        interface swirling in brand coherence, I might just be the person you're
-        looking for.
-      </p>
+    <div class="flex flex-col items-start gap-10 pl-10 md:flex-row">
+      <IconList icon="ph--handshake" heading="What I bring to the team:">
+        <li>Responsibility.</li>
+        <li>Initiative.</li>
+        <li>Positive attitude.</li>
+      </IconList>
 
-      
-      <p class="col-span-2">
-        Yes, I'm <Highlight>proficient in html, css and javascript,</Highlight>
-         though I've never really thought about my skillset in that way. I like
-        to go where the project is pointing. Whatever is the better fit. You
-        could say I'm somewhat <Highlight>framework agnostic.</Highlight> If I
-        don't already know a particular bit of stack needed, I'm <Highlight>
-          fast at picking up
-        </Highlight> - reading documentation, scouring forums, chatboards and
-        communities to move me forward. Like I said. Solutions oriented - <Highlight>getting things done.</Highlight>
-      </p>
-
-      <Buzzwords />
-
-      <p class="col-span-2">
-        So, what else is there to say. I have twin boys about to start school, a
-        lovely wife and a couch-hugger of a dog. I write dystopian fiction in my
-        spare time, avidly play boardgames with my friends when I get the
-        chance, and live in the <Highlight>
-          suburbs of Copenhagen.
-        </Highlight> Which is just how I prefer it.
-      </p>
-
-      <p class="col-span-2">
-        Think I fit your team or project? Great! I would love to hear from you.
-        <Highlight>Write me at <a class="link-dark dark:link-light" href="mailto:hello@torkil.tech">hello@torkil.tech</a></Highlight> and let's get talking.
-      </p>
-      <Education />
+      <IconList
+        icon="ph--git-pull-request"
+        heading="What I bring to the project:"
+      >
+        <li>Flexibility.</li>
+        <li>Attention to detail.</li>
+        <li>Tenacity.</li>
+      </IconList>
     </div>
+
+    <WidthClamp class="py-12 sm:py-20 md:py-28">
+      <Text>
+        I graduated from <a
+          class="font-bold underline"
+          href="https://www.rts.dk/in-english">Roskilde Technical College</a
+        > back in 2018 which included a three year stint with the great people
+        at <a class="font-black underline" href="https://www.1508.dk/">1508</a>.
+      </Text>
+      <Text>
+        Only thing left to say is I live in the suburbs of Copenhagen with my
+        loving family.
+      </Text>
+    </WidthClamp>
+    <WidthClamp class="pb-4">
+      <Text>Think I'm a good fit for your team or project?</Text>
+    </WidthClamp>
+
+    <IconBlock>
+      <div slot="icon" class="iconify rotate-90 ph--hand-pointing"></div>
+      <div slot="content">
+        <ul class="text-xl sm:text-3xl lg:text-4xl">
+          <li class="pb-0 sm:pb-2 md:pb-4">
+            <a class="font-bold underline" href="mailto:hello@torkil.tech"
+              >hello@torkil.tech</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-bold underline"
+              href="https://www.linkedin.com/in/torkil-in-tech/">LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </IconBlock>
   </article>
-  
 </Layout>

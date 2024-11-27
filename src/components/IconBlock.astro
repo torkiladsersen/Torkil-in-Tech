@@ -1,0 +1,14 @@
+---
+import WidthClamp from "./WidthClamp.astro";
+---
+
+<div
+  class="flex flex-row items-start gap-4 pl-10 sm:gap-8 sm:pl-16 lg:gap-10 lg:pl-20"
+>
+  <div class="text-5xl sm:text-7xl lg:text-8xl">
+    <slot name="icon" />
+  </div>
+  <WidthClamp>
+    <slot name="content" />
+  </WidthClamp>
+</div>
